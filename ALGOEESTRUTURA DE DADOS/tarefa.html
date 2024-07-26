@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function calcularTriangulo() {
+        let baseTriangulo = parseFloat(prompt("Digite o valor da base do triângulo:"));
+        let alturaTriangulo = parseFloat(prompt("Digite o valor da altura do triângulo:"));
+        let areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
+        window.alert("A área do triângulo é: " + areaTriangulo);
+    }
+    
+    function calcularTrapezio() {
+        let baseMaior = parseFloat(prompt("Digite o valor da base maior do trapézio:"));
+        let baseMenor = parseFloat(prompt("Digite o valor da base menor do trapézio:"));
+        let alturaTrapezio = parseFloat(prompt("Digite o valor da altura do trapézio:"));
+        let areaTrapezio = ((baseMaior + baseMenor) / 2) * alturaTrapezio;
+        window.alert("A área do trapézio é: " + areaTrapezio);
+    }
+    
+    function calcularCirculo() {
+        let raio = parseFloat(prompt("Digite o valor do raio do círculo:"));
+        let areaCirculo = Math.PI * Math.pow(raio, 2);
+        window.alert("A área do círculo é: " + areaCirculo);
+    }
+    
+    function calcularQuadrado() {
+        let lado = parseFloat(prompt("Digite o valor do lado do quadrado:"));
+        let areaQuadrado = Math.pow(lado, 2);
+        window.alert("A área do quadrado é: " + areaQuadrado);
+    }
+    function calcularQuadrado() {
+    let lado = parseFloat(prompt("Digite o valor do lado:"));
+    let areaQuadrado = lado * lado;
+    window.alert("A área do quadrado é: " + areaQuadrado);
+}
+
+var figura = prompt("Digite o tipo de figura geométrica (triângulo, trapézio, círculo etc.):").toLowerCase();
+
+switch (figura) {
+    case "triangulo":
+        calcularTriangulo();
+        break;
+    case "trapezio":
+        calcularTrapezio();
+        break;
+    case "circulo":
+        calcularCirculo();
+        break;
+    default:
+        window.alert("Figura geométrica não reconhecida.");
+}
+switch(segmento) {
+    case 'trapezio':
+        calcularTrapezio();
+        break;
+    case 'circulo':
+        calcularCirculo();
+        break;
+    case 'retangulo':
+        calcularRetangulo();
+        break;
+    case 'quadrado':
+        calcularQuadrado();
+        break;
+    default:
+        window.alert("Figura geométrica não reconhecida. Tente novamente.");
+}
+
+</script>
+</body>
+</html>

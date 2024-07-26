@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soma</title>
+</head>
+<body>
+    <script>
+        function soma(a,b){
+            return a + b;
+        }
+        window.alert(resultado)
+        function somadois(){
+            let a = parseFloat(prompt("digite o primeiro valor"));
+            let b = parseFloat(prompt("digite o segundo valor"));
+            resultado= a + b;
+            window.alert(resultado)
+        }
+        //somaDois();
+        //FAÇA UM QUE CALCULE A MEDIA , SE >=7 APROVADO SE NAO REPROVADO
+            function media(){
+                let notaum = parseFloat(prompt("insira a primeira nota"));
+                let notadois = parseFloat(prompt("insira a segunda nota"));
+                let mediasemestre = (notaum + notadois) / 2
+
+                if (media>=7){
+                    window.alert("aprovado! media: " + mediasemestre)
+                }else{
+                    alert("reprovado")
+                }
+                }
+            media();
+    </script>
+</body>
+</html>
